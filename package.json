@@ -1,26 +1,26 @@
 {
-  "_from": "react-native-mqtt@0.1.0-beta4",
+  "_from": "git+https://github.com/linfeizhang/react-native-mqtt.git",
   "_id": "react-native-mqtt@0.1.0-beta4",
   "_inBundle": false,
   "_integrity": "sha1-uW4XdF/jGuIaviVTy72L7nD9URA=",
   "_location": "/react-native-mqtt",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "react-native-mqtt@0.1.0-beta4",
+    "type": "git",
+    "raw": "react-native-mqtt@git+https://github.com/linfeizhang/react-native-mqtt.git",
     "name": "react-native-mqtt",
     "escapedName": "react-native-mqtt",
-    "rawSpec": "0.1.0-beta4",
-    "saveSpec": null,
-    "fetchSpec": "0.1.0-beta4"
+    "rawSpec": "git+https://github.com/linfeizhang/react-native-mqtt.git",
+    "saveSpec": "git+https://github.com/linfeizhang/react-native-mqtt.git",
+    "fetchSpec": "https://github.com/linfeizhang/react-native-mqtt.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/react-native-mqtt/download/react-native-mqtt-0.1.0-beta4.tgz",
+  "_resolved": "git+https://github.com/linfeizhang/react-native-mqtt.git#baada4468f7fa167f1bf7ff1c8a32cea919be893",
   "_shasum": "b96e17745fe31ae21abe2553cbbd8bee70fd5110",
-  "_spec": "react-native-mqtt@0.1.0-beta4",
+  "_spec": "react-native-mqtt@git+https://github.com/linfeizhang/react-native-mqtt.git",
   "_where": "/Users/zhanglinfeimacair/workroom/coding/SmartFleet_App_Admin/SmartFleet_App_Admin",
   "author": {
     "name": "Tuan PM",

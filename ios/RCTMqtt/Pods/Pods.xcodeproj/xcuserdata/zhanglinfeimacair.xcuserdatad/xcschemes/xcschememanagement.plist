@@ -9,28 +9,28 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>63</integer>
+			<integer>10</integer>
 		</dict>
 		<key>MQTTClient.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>64</integer>
+			<integer>11</integer>
 		</dict>
 		<key>Pods-RCTMqtt.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>65</integer>
+			<integer>12</integer>
 		</dict>
 		<key>SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>66</integer>
+			<integer>13</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

@@ -22,7 +22,7 @@ var MqttClient = function (options, clientRef) {
 }
 
 MqttClient.prototype.on = function (event, callback) {
-	console.log('setup event', event);
+	// console.log('setup event', event);
 	this.eventHandler[event] = callback;
 }
 
@@ -57,7 +57,7 @@ module.exports = {
 			var protocol = matches[2];
 			var host = matches[4];
 			var port = matches[5];
-
+			console.log(matches)
 			options.port = parseInt(port);
 			options.host = host;
 			options.protocol = protocol;
@@ -78,7 +78,7 @@ module.exports = {
 
 		/* Listen mqtt event */
 		if (this.eventHandler === null) {
-			console.log('add mqtt_events listener')
+			// console.log('add mqtt_events listener')
 			this.eventHandler = DeviceEventEmitter.addListener(
 				"mqtt_events",
 				(data) => this.dispatchEvents(data));

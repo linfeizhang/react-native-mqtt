@@ -153,6 +153,11 @@
                                                                    }];
             break;
         case MQTTSessionManagerStateStarting:
+            [self.bridge.eventDispatcher sendDeviceEventWithName:@"mqtt_events"
+                                                            body:@{@"event": @"start",
+                                                                   @"clientRef": [NSNumber numberWithInt:[self clientRef]],
+                                                                   @"message": @"start"
+                                                                   }];
         default:
             break;
     }
@@ -184,7 +189,7 @@
      */
     
     NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    RCTLogInfo(@" %@ : %@", topic, dataString);
+//    RCTLogInfo(@" %@ : %@", topic, dataString);
     [self.bridge.eventDispatcher sendDeviceEventWithName:@"mqtt_events"
                                                     body:@{
                                                            @"event": @"message",

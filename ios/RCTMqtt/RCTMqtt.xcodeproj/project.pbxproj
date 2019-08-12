@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C95DBF6E260A78D686CA9121 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B740AC6198A5D77A7A48DD51 /* libPods.a */; };
+		C8DC6E70960331735A7C4EB9 /* libPods-RCTMqtt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4D986BE65B7FF259DAFB36 /* libPods-RCTMqtt.a */; };
 		FF7A9D4E1C64788B006743BA /* RCTMqtt.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7A9D4C1C64788B006743BA /* RCTMqtt.m */; };
 		FF7A9D671C6478E6006743BA /* libCocoaLumberjack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7A9D5E1C6478D5006743BA /* libCocoaLumberjack.a */; };
 		FF7A9D681C6478E6006743BA /* libMQTTClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7A9D601C6478D5006743BA /* libMQTTClient.a */; };
@@ -83,7 +83,7 @@
 				FF7A9D681C6478E6006743BA /* libMQTTClient.a in Frameworks */,
 				FF7A9D691C6478E6006743BA /* libPods-RCTMqtt.a in Frameworks */,
 				FF7A9D6A1C6478E6006743BA /* libSocketRocket.a in Frameworks */,
-				C95DBF6E260A78D686CA9121 /* libPods.a in Frameworks */,
+				C8DC6E70960331735A7C4EB9 /* libPods-RCTMqtt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
