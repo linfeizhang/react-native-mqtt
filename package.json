@@ -26,12 +26,12 @@
     "name": "linfeizhang"
   },
   "bugs": {
-    "url": "https://github.com/tuanpmt/react-native-mqtt/issues"
+    "url": "https://github.com/linfeizhang/react-native-mqtt/issues"
   },
   "bundleDependencies": false,
   "deprecated": false,
   "description": "MQTT client for react-native",
-  "homepage": "https://github.com/tuanpmt/react-native-mqtt#readme",
+  "homepage": "https://github.com/linfeizhang/react-native-mqtt#readme",
   "keywords": [
     "mqtt",
     "reactnative",
@@ -42,7 +42,7 @@
   "name": "react-native-mqtt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tuanpmt/react-native-mqtt.git"
+    "url": "git+https://github.com/linfeizhang/react-native-mqtt.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -8,7 +8,6 @@ import android.util.Log;
 import android.widget.Toast;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 
 import com.facebook.react.bridge.*;
 
@@ -54,8 +53,6 @@ public class RCTMqtt implements MqttCallback {
   private final ReactApplicationContext _reactContext;
   private final WritableMap defaultOptions;
   private final int clientRef;
-  int defaultQos;
-  String defaultTopic;
   MqttAsyncClient client;
   MemoryPersistence memPer;
   MqttConnectOptions mqttoptions;
@@ -68,13 +65,15 @@ public class RCTMqtt implements MqttCallback {
     defaultOptions.putInt("port", 1883);
     defaultOptions.putString("protocol", "tcp");
     defaultOptions.putBoolean("tls", false);
-    defaultOptions.putInt("keepalive", 120);
+    defaultOptions.putInt("keepalive", 1883);
     defaultOptions.putString("clientId", "react-native-mqtt");
     defaultOptions.putInt("protocolLevel", 4);
     defaultOptions.putBoolean("clean", true);
     defaultOptions.putBoolean("auth", false);
     defaultOptions.putString("user", "");
     defaultOptions.putString("pass", "");
+    defaultOptions.putBoolean("will", false);
+    defaultOptions.putInt("protocolLevel", 4);
     defaultOptions.putBoolean("will", false);
     defaultOptions.putString("willMsg", "");
     defaultOptions.putString("willtopic", "");
@@ -109,10 +108,14 @@ public class RCTMqtt implements MqttCallback {
       defaultOptions.putString("pass", _options.getString("pass"));
     if (_options.hasKey("will"))
       defaultOptions.putBoolean("will", _options.getBoolean("will"));
+    if (_options.hasKey("protocolLevel"))
+      defaultOptions.putInt("protocolLevel", _options.getInt("protocolLevel"));
+    if (_options.hasKey("will"))
+      defaultOptions.putBoolean("will", _options.getBoolean("will"));
     if (_options.hasKey("willMsg"))
       defaultOptions.putString("willMsg", _options.getString("willMsg"));
     if (_options.hasKey("willtopic"))
-      defaultOptions.putString("willtopic", _options.getString("willtopic"));
+      defaultOptions.putString("willMsg", _options.getString("willMsg"));
     if (_options.hasKey("willQos"))
       defaultOptions.putInt("willQos", _options.getInt("willQos"));
     if (_options.hasKey("willRetainFlag"))
@@ -124,20 +127,11 @@ public class RCTMqtt implements MqttCallback {
 
     mqttoptions = new MqttConnectOptions();
 
-    if (options.getInt("protocolLevel") == 3) {
+    if (options.getInt("protocolLevel") == 3)
       mqttoptions.setMqttVersion(MqttConnectOptions.MQTT_VERSION_3_1);
-    }
-
-    mqttoptions.setCleanSession(true);
-    // 设置超时时间
-    mqttoptions.setConnectionTimeout(10);
-    // 设置会话心跳时间
     mqttoptions.setKeepAliveInterval(options.getInt("keepalive"));
-    // 设置断开后重新连接
-    // mqttoptions.setAutomaticReconnect(true);
 
     String uri = "tcp://";
-    // uri = options.getString("protocol") + "://";
     if (options.getBoolean("tls")) {
       uri = "ssl://";
       try {
@@ -192,7 +186,7 @@ public class RCTMqtt implements MqttCallback {
     try {
       client = new MqttAsyncClient(uri, options.getString("clientId"), memPer);
     } catch (MqttException e) {
-      e.printStackTrace();
+
     }
 
   }
@@ -209,11 +203,6 @@ public class RCTMqtt implements MqttCallback {
   public void connect() {
     try {
       // Connect using a non-blocking connect
-      WritableMap _params = Arguments.createMap();
-      _params.putString("event", "connecting");
-      _params.putString("message", "connecting");
-      sendEvent(_reactContext, "mqtt_events", _params);
-
       client.connect(mqttoptions, _reactContext, new IMqttActionListener() {
         public void onSuccess(IMqttToken asyncActionToken) {
 
@@ -229,39 +218,31 @@ public class RCTMqtt implements MqttCallback {
 
           WritableMap params = Arguments.createMap();
           params.putString("event", "error");
-          params.putString("message", "error" + exception);
+          params.putString("message", "connection failure");
           sendEvent(_reactContext, "mqtt_events", params);
         }
       });
     } catch (MqttException e) {
       WritableMap params = Arguments.createMap();
       params.putString("event", "error");
-      params.putString("message", "error" + e);
+      params.putString("message", "Can't create connection");
       sendEvent(_reactContext, "mqtt_events", params);
     }
   }
 
   public void disconnect() {
-    WritableMap _params = Arguments.createMap();
-    _params.putString("event", "closing");
-    _params.putString("message", "closing");
-    sendEvent(_reactContext, "mqtt_events", _params);
     IMqttActionListener discListener = new IMqttActionListener() {
       public void onSuccess(IMqttToken asyncActionToken) {
         log("Disconnect Completed");
         WritableMap params = Arguments.createMap();
         params.putString("event", "closed");
-        params.putString("message", "closed");
+        params.putString("message", "Disconnect");
         sendEvent(_reactContext, "mqtt_events", params);
 
       }
 
       public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
 
-        WritableMap params = Arguments.createMap();
-        params.putString("event", "Disconnect");
-        params.putString("message", "Disconnect failed");
-        sendEvent(_reactContext, "mqtt_events", params);
         log("Disconnect failed" + exception);
 
       }
@@ -278,8 +259,6 @@ public class RCTMqtt implements MqttCallback {
 
   public void subscribe(final String topic, final int qos) {
     try {
-      defaultQos = qos;
-      defaultTopic = topic;
       IMqttToken subToken = client.subscribe(topic, qos);
       subToken.setActionCallback(new IMqttActionListener() {
         @Override
@@ -326,10 +305,9 @@ public class RCTMqtt implements MqttCallback {
     // logic at this point. This sample simply exits.
     log("Connection to lost! " + cause);
     WritableMap params = Arguments.createMap();
-    params.putString("event", "ConnectionLost");
-    params.putString("message", "Connection to lost!" + cause);
+    params.putString("event", "closed");
+    params.putString("message", "Connection to lost!");
     sendEvent(_reactContext, "mqtt_events", params);
-
     // System.exit(1);
   }
 
