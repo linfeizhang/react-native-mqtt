@@ -23,9 +23,7 @@
   "_spec": "react-native-mqtt@git+https://github.com/linfeizhang/react-native-mqtt.git",
   "_where": "/Users/zhanglinfeimacair/workroom/coding/SmartFleet_App_Admin/SmartFleet_App_Admin",
   "author": {
-    "name": "Tuan PM",
-    "email": "tuanpm@live.com",
-    "url": "http://tuanpm.net"
+    "name": "linfeizhang"
   },
   "bugs": {
     "url": "https://github.com/tuanpmt/react-native-mqtt/issues"
