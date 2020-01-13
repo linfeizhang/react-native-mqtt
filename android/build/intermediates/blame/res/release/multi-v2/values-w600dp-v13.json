@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/build/intermediates/res/merged/release/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-2/files-2.1/88483b5a5a0bd5232f06f2c36f538cb2/res/values-w600dp/values-w600dp.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "283,347",
+                        "endColumns": "63,54",
+                        "endOffsets": "342,397"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,119",
+                        "endColumns": "63,54",
+                        "endOffsets": "114,169"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-2/files-2.1/88483b5a5a0bd5232f06f2c36f538cb2/res/values-w600dp/values-w600dp.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "283,347",
+                        "endColumns": "63,54",
+                        "endOffsets": "342,397"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,119",
+                        "endColumns": "63,54",
+                        "endOffsets": "114,169"
+                    }
+                }
+            ]
+        }
+    ]
+}
