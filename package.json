@@ -18,21 +18,25 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git+https://github.com/linfeizhang/react-native-mqtt.git#8faf71ef1a2b6a290abf7afaa7ad622159a59335",
+  "_resolved": "git+https://github.com/linfeizhang/react-native-mqtt.git#baada4468f7fa167f1bf7ff1c8a32cea919be893",
+  "_shasum": "b96e17745fe31ae21abe2553cbbd8bee70fd5110",
   "_spec": "react-native-mqtt@git+https://github.com/linfeizhang/react-native-mqtt.git",
   "_where": "/Users/zhanglinfeimacair/workroom/coding/SmartFleet_App_Admin/SmartFleet_App_Admin",
   "author": {
-    "name": "linfei"
+    "name": "Tuan PM",
+    "email": "tuanpm@live.com",
+    "url": "http://tuanpm.net"
   },
   "bugs": {
-    "url": "https://github.com/linfeizhang/react-native-mqtt/issues"
+    "url": "https://github.com/tuanpmt/react-native-mqtt/issues"
   },
+  "bundleDependencies": false,
   "deprecated": false,
   "description": "MQTT client for react-native",
-  "homepage": "https://github.com/linfeizhang/react-native-mqtt#readme",
+  "homepage": "https://github.com/tuanpmt/react-native-mqtt#readme",
   "keywords": [
     "mqtt",
-    "react-native",
+    "reactnative",
     "iot"
   ],
   "license": "MIT",
@@ -40,7 +44,7 @@
   "name": "react-native-mqtt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/linfeizhang/react-native-mqtt.git"
+    "url": "git+https://github.com/tuanpmt/react-native-mqtt.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
