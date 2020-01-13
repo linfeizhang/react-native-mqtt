@@ -22,18 +22,17 @@
   "_spec": "react-native-mqtt@git+https://github.com/linfeizhang/react-native-mqtt.git",
   "_where": "/Users/zhanglinfeimacair/workroom/coding/SmartFleet_App_Admin/SmartFleet_App_Admin",
   "author": {
-    "name": "linfei",
+    "name": "linfei"
   },
   "bugs": {
     "url": "https://github.com/linfeizhang/react-native-mqtt/issues"
   },
-  "bundleDependencies": false,
   "deprecated": false,
   "description": "MQTT client for react-native",
   "homepage": "https://github.com/linfeizhang/react-native-mqtt#readme",
   "keywords": [
     "mqtt",
-    "reactnative",
+    "react-native",
     "iot"
   ],
   "license": "MIT",
