@@ -38,11 +38,11 @@ ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-n
 	android:name
 		ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml:5:19-69
 application
-ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml:6:1-9:16
+ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml:6:2-9:16
 service#org.eclipse.paho.android.service.MqttService
-ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml:7:2-8:12
+ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml:7:3-8:13
 	android:name
-		ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml:7:11-70
+		ADDED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml:7:12-71
 uses-sdk
 INJECTED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/src/main/AndroidManifest.xml

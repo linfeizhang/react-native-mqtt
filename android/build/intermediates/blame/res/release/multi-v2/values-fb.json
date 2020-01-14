@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-fb/values-fb.xml",
+            "outputFile": "/Volumes/Mac/workroom/coding/SmartFleet_App_Admin/node_modules/react-native-mqtt/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-fb/values-fb.xml",
             "map": [
                 {
-                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-2/files-2.1/951ffaf1deded47a42df02df19ee15e8/res/values-fb/values-fb.xml",
+                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-1/files-1.1/react-native-0.19.1.aar/fd1435ca4f47b249cfbf2fff8539c1e0/res/values-fb/values-fb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/build/intermediates/res/merged/release/values-fb/values-fb.xml",
+            "outputFile": "/Volumes/Mac/workroom/coding/SmartFleet_App_Admin/node_modules/react-native-mqtt/android/build/intermediates/res/merged/release/values-fb/values-fb.xml",
             "map": [
                 {
-                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-2/files-2.1/951ffaf1deded47a42df02df19ee15e8/res/values-fb/values-fb.xml",
+                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-1/files-1.1/react-native-0.19.1.aar/fd1435ca4f47b249cfbf2fff8539c1e0/res/values-fb/values-fb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

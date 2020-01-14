@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/build/intermediates/res/merged/release/values-v11/values-v11.xml",
+            "outputFile": "/Volumes/Mac/workroom/coding/SmartFleet_App_Admin/node_modules/react-native-mqtt/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-2/files-2.1/88483b5a5a0bd5232f06f2c36f538cb2/res/values-v11/values-v11.xml",
+                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/d8a9088af1c3167a2f665aa634095b0e/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "4,10,16,22,28,34,42,43,44,49,56,58,62,63,64,115,169",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -25,10 +25,10 @@
             ]
         },
         {
-            "outputFile": "/Volumes/Mac/workroom/coding/smartfleet-user-app/node_modules/react-native-mqtt/android/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v11/values-v11.xml",
+            "outputFile": "/Volumes/Mac/workroom/coding/SmartFleet_App_Admin/node_modules/react-native-mqtt/android/build/intermediates/res/merged/release/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-2/files-2.1/88483b5a5a0bd5232f06f2c36f538cb2/res/values-v11/values-v11.xml",
+                    "source": "/Users/zhanglinfeimacair/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/d8a9088af1c3167a2f665aa634095b0e/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "4,10,16,22,28,34,42,43,44,49,56,58,62,63,64,115,169",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
